@@ -1,0 +1,13 @@
+:root { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #203b32; background: #f4f7f3; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+.app-content { max-width: 640px; margin: auto; padding: calc(28px + env(safe-area-inset-top)) 20px calc(80px + env(safe-area-inset-bottom)); }
+header { margin-bottom: 28px; }
+.eyebrow { color: #22765c; font-size: 12px; font-weight: 700; letter-spacing: .18em; }
+h1 { font-size: 30px; margin: 10px 0; }
+h2 { font-size: 22px; margin: 22px 0 12px; }
+p { line-height: 1.7; color: #617269; }
+.card { background: white; border: 1px solid #e4ebe3; border-radius: 24px; padding: 24px; }
+.card .van-button { margin-top: 16px; }
+.badge { display: inline-block; padding: 6px 12px; border-radius: 20px; font-size: 12px; color: #22765c; background: #eaf4ed; }
+.footnote { font-size: 12px; text-align: center; padding: 12px; }

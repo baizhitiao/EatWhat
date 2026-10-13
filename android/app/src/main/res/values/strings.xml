@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">EatWhat</string>
+    <string name="title_activity_main">EatWhat</string>
+    <string name="package_name">io.github.baizhitiao.eatwhat</string>
+    <string name="custom_url_scheme">io.github.baizhitiao.eatwhat</string>
+</resources>
