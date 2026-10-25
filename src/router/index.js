@@ -1,15 +1,21 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import PlaceholderView from '../views/PlaceholderView.vue'
 
 export default createRouter({
   history: createWebHashHistory(),
   routes: [
     { path: '/', redirect: '/home' },
     { path: '/home', component: HomeView },
-    { path: '/records', component: PlaceholderView, props: { title: '饮食记录', description: '在这里记录今天吃过的食物。记录功能将在后续开发中接入。' } },
-    { path: '/calendar', component: PlaceholderView, props: { title: '饮食日历', description: '按日期回顾你的每一餐。日历功能将在后续开发中接入。' } },
-    { path: '/me', component: PlaceholderView, props: { title: '我的', description: '查看饮食统计、设置偏好和管理本地数据。' } },
+    { path: '/records', component: () => import('../views/RecordsView.vue') },
+    { path: '/records/new', component: () => import('../views/RecordFormView.vue') },
+    { path: '/records/:id/edit', component: () => import('../views/RecordFormView.vue') },
+    { path: '/calendar', component: () => import('../views/CalendarView.vue') },
+    { path: '/me', component: () => import('../views/ProfileView.vue') },
+    { path: '/stats', component: () => import('../views/StatsView.vue') },
+    { path: '/foods', component: () => import('../views/FoodsView.vue') },
+    { path: '/foods/new', component: () => import('../views/FoodFormView.vue') },
+    { path: '/foods/:id/edit', component: () => import('../views/FoodFormView.vue') },
     { path: '/:pathMatch(.*)*', redirect: '/home' }
-  ]
+  ],
+  scrollBehavior: () => ({ top: 0 }),
 })

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Same as the CSS md-surface token, so the window behind the WebView never flashes another colour. -->
+    <color name="eatwhat_surface">#FFF8F6</color>
+</resources>

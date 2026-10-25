@@ -1,5 +1,10 @@
 {
   "appId": "io.github.baizhitiao.eatwhat",
   "appName": "EatWhat",
-  "webDir": "dist"
+  "webDir": "dist",
+  "plugins": {
+    "SystemBars": {
+      "insetsHandling": "disable"
+    }
+  }
 }
