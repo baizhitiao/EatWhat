@@ -20,3 +20,14 @@ dist/
 .native-backup/
 .idea/
 *.log
+.qa/
+
+# Local tool and editor settings
+.claude/
+.vscode/
+*.code-workspace
+
+# Documents stay local; only README.md is published
+*.md
+!/README.md
+docs/
